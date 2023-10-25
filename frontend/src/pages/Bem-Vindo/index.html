@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Bem-Vindo ao Karajuji</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="./index.html">KARAJUJI</a>
+    </nav>
+    <div class="navbar" id="myNavbar">
+      <a href="../Vocacional_teste/index.html">Vocacional</a>
+      <div class="dropdown">
+        <button class="dropbtn">Artes Marciais
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../InfoJUDÔ/index.html">Judô</a>
+          <a href="../InfoJIUJITSU/index.html">Jiu-Jitsu</a>
+          <a href="../InfoKARATÊ/index.html">Karatê</a>
+        </div>
+      </div>
+      <a href="../CriarConta/index.html">Criar conta</a>
+    </div>
+  </header>  
+  
+  <main>  
+    <div class="container_esquerda">
+        <div class="container_esquerda_entrada">
+            <h2>Bem-vindo!</h2>
+            <p>Aqui você pode se encontrar e compartilhar suas conquistas!</p>
+        </div>
+        <div class="containerForm">
+            <h2>Iniciar sessão:</h2>
+            <form>
+                <label for="username">Nome de Usuário:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+                
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                
+                <button type="submit" onclick="verificandoConta()">Entrar</button>
+            </form>
+          </div>
+        </div>
+        <div class="container_direita">
+        <img src="../../assets/box-img__2_-removebg-preview.png" alt="" id="img_logoDireita">
+    </div>
+  </main>
+
+  <footer>
+    <p>Me conheça clicando <a href="#">aqui.</a></p>
+  </footer>
+  
+  <script src="./verificacao.js"></script>
+</body>
+</html>

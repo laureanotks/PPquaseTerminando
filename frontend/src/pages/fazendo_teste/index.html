@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Karajuji</title>
+</head>
+
+ <body>
+    <header>
+        <nav>
+          <a href="#">Entrar</a>
+        </nav>
+        <div class="navbar" id="myNavbar">
+          <a href="#">Vocacional</a>
+          <div class="dropdown">
+            <button class="dropbtn">Artes Marciais
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../InfoJUDÔ/index.html">Judô</a>
+              <a href="../InfoJIUJITSU/index.html">Jiu-Jitsu</a>
+              <a href="../InfoKARATÊ/index.html">Karatê</a>
+            </div>
+          </div>
+          <a href="../CriarConta/index.html">Criar conta</a>
+        </div>
+    </header>     
+
+    <main>  
+        <div class="containerPrincipal">
+          <section class='conteudos'>
+
+            <h1>Teste Vocacional</h1>
+
+            <article class='centro' id='instrucoes'>
+                Leia a questão e clique na resposta correta
+            </article>
+
+            <article class='questoes'>
+                
+                <header class='questao'>
+                    <span id='numQuestao'></span>
+                    <h2 id='pergunta'></h2>
+                </header>
+
+                <div class='corpo'>
+                    <ol type='A' id='alternativas'>
+                        <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                    </ol>
+                </div>
+            </article>
+            
+            <article id='aviso'>Questão <span id='numero'></span> de <span id='total'></span></article>
+            
+        </section>
+        </div>           
+    </main>
+    
+
+    <footer>
+      <img src="../../assets/box-img-horizontal.png" alt="">
+    </footer>
+    
+    
+    
+    
+    
+    
+    <script src="../../../../backend/TesteVocacional/main.js" defer></script>
+ </body>
+</html>

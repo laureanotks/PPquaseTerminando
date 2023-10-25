@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CABEÇA<--------------------------------------------------------------------------------------------------- */
+
+header{
+  display: flex;
+  overflow: hidden;
+  background-color: #2d4754ec;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+header a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #2d4754ec;
+}
+
+nav a:hover{
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  color: black;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #2d4754ec;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive .dropdown {
+    float: none;
+  }
+  .navbar.responsive .dropdown-content {
+    position: relative;
+  }
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+/* CORPO/PRINCIPAL<--------------------------------------------------------------------------------------------- */
+
+body{
+  background-image: url(../../assets/fundoTeste.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main{
+  min-height: 100vh;
+}
+
+.containerPrincipal{
+  background-color: rgba(255, 255, 255, 0.881);
+  width: 40vw;
+  height: 80vh;
+  margin-left: 30%;
+  border-radius: 20px;
+  padding: 30px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 1%;
+  text-align: center;
+}
+
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #191919; */
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.centro {
+  text-align: center;
+}
+
+.questao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#numQuestao {
+  display: block;
+  background: black;
+  padding: 4px 10px 2px 10px;
+  border-radius: 50%;
+  color: white;
+}
+
+#pergunta {
+  margin-left: 1rem;
+  color: black;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* article que acomoda a questao completa */
+.questoes {
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  color: black
+  /* background-color: #00b0ff; */
+}
+
+.questoes ol li {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #cccccc40;
+
+}
+
+.questoes ol li:hover {
+  background: #0b181f;
+  color: white;
+  cursor: pointer;
+}
+
+.bloqueado {
+  display: none;
+}
+
+.bloqueado li:hover {
+  display: none;
+}
+
+#instrucoes {
+  color: #191919;
+  padding: 0.625rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#aviso {
+  color: #0b181f;
+}
+
+
+/* FOOTER<----------------------------------------------------------------------------------------------------- */
+
+footer {
+  background-color: #2d4754ec;
+  color: #fff;
+  padding: 10px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer img{
+  height: 5vh;
+}
+
+footer p{
+  margin-top: 25px;
+}.meuLink{
+  justify-content: flex-end;
+}
+  
+footer a {
+  color: rgb(43, 186, 226);
+}
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Criação de conta</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="../Bem-Vindo/index.html">Entrar</a>
+        </nav>
+        <div class="navbar" id="myNavbar">
+          <a href="../Vocacional_teste/index.html">Vocacional</a>
+          <div class="dropdown">
+            <button class="dropbtn">Artes Marciais
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../InfoJUDÔ/index.html">Judô</a>
+              <a href="../InfoJIUJITSU/index.html">Jiu-Jitsu</a>
+              <a href="../InfoKARATÊ/index.html">Karatê</a>
+            </div>
+          </div>
+          <a href="../CriarConta/index.html">Criar conta</a>
+        </div>
+    </header>  
+    
+    <main>
+        <div class="containerForm">
+            <h1>Criar Conta</h1>
+            <form>
+              <label for="username">Nome de usuário:</label>
+              <input type="text" id="username" name="username" placeholder="Digite seu nome" required>
+        
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+        
+              <label for="password">Senha:</label>
+              <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+        
+              <button type="button" onclick="createAccout()">Criar Conta</button>
+            </form>
+            </div>
+    </main>
+
+    <footer>
+        <p>Me conheça clicando <a href="#">aqui.</a></p>
+    </footer>
+    
+    <script src="./registro.js"></script>
+</body>
+</html>
